@@ -124,6 +124,27 @@
                 color: #b0b0b0; 
             }
         }
+
+        /* 新增：底部链接样式 */
+        .footer-links {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 30px;
+            border-top: 1px solid #ddd; /* 顶部加一条分割线 */
+        }
+        
+        .footer-links a {
+            color: #3498db; /* 链接颜色 */
+            text-decoration: none; /* 移除下划线 */
+            margin: 0 15px;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #2980b9; /* 鼠标悬停变色 */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -141,7 +162,10 @@
                 <p>发现直接在 GitHub 上编辑 HTML 文件比想象中要简单得多。这种“所见即所得”的静态托管方式非常适合个人记录，不需要配置复杂的后端。如果内容变多，我会考虑切换到 Jekyll 或 Hugo 提高效率。</p>
             </div>
         </div>
-        
+
+        <div class="footer-links">
+            <a href="https://github.com/ZenithChunyang" target="_blank">GitHub</a>
+        </div>
         </div>
 </body>
 </html>
