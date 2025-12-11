@@ -3,157 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三 - 个人简历</title>
+    <title>ZenithChunyang的文字记录与思考</title>
     
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.8;
             margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
+            padding: 40px 20px;
+            background-color: #f7f9fc; /* 浅蓝色背景 */
             color: #333;
         }
 
         .container {
-            max-width: 850px;
+            max-width: 800px;
             margin: auto;
             background: #ffffff;
-            padding: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-top: 25px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
             border-bottom: 3px solid #3498db;
-            margin-bottom: 15px;
-            text-align: center;
         }
 
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #7f8c8d;
+        .entry {
+            padding: 20px 0;
+            border-bottom: 1px dashed #ecf0f1;
+            margin-bottom: 25px;
         }
 
-        .contact-info span {
-            margin: 0 10px;
+        .entry:last-child {
+            border-bottom: none; /* 最后一项没有分隔线 */
         }
 
-        .section-content {
-            margin-bottom: 20px;
-        }
-
-        .job-title {
-            font-weight: bold;
-            color: #34495e;
-            margin-bottom: 5px;
-        }
-
-        .date {
-            float: right;
-            color: #7f8c8d;
-        }
-
-        ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .skill-list {
-            list-style: none;
-            padding: 0;
+        .entry-header {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
         }
 
-        .skill-list li {
-            background-color: #ecf0f1;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 4px;
+        .entry-title {
+            font-size: 1.5em;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .entry-date {
             font-size: 0.9em;
+            color: #7f8c8d;
         }
 
-        /* 打印优化 */
-        @media print {
-            body { background: #fff; }
-            .container { box-shadow: none; }
+        .entry-content p {
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <h1>张三 / Zhang San</h1>
-        
-        <div class="contact-info">
-            <span>邮箱: zhangsan@email.com</span> | 
-            <span>电话: +86 138 XXXX XXXX</span> | 
-            <span>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></span>
-        </div>
-        
-        <h2>个人总结 / Summary</h2>
-        <div class="section-content">
-            <p>五年资深软件工程师，专注于高性能后端系统开发。熟悉 Java/Python，精通微服务架构设计与部署。具备优秀的问题解决能力和团队协作精神，寻求在创新型科技公司发挥所长。</p>
-        </div>
-        
-        <h2>工作经历 / Experience</h2>
-        <div class="section-content">
-            
-            <div class="job-item">
-                <div class="job-title">高级后端开发工程师 <span class="date">2022.03 – 至今</span></div>
-                <p><strong>XX 科技公司 (TechCorp)</strong> | 部门: 核心服务</p>
-                <ul>
-                    <li>主导设计和开发了每日处理千万级请求的支付网关服务，提升系统吞吐量 40%。</li>
-                    <li>引入 Redis 缓存机制，将核心 API 响应时间从 500ms 降低至 50ms。</li>
-                    <li>负责指导初级工程师，并进行代码审查，确保代码质量和系统稳定性。</li>
-                </ul>
-            </div>
-            
-            <div class="job-item">
-                <div class="job-title">初级软件工程师 <span class="date">2020.07 – 2022.02</span></div>
-                <p><strong>YY 互联网公司 (WebCo)</strong> | 部门: 数据平台</p>
-                <ul>
-                    <li>参与了 ETL 数据管道的开发与维护工作，使用 Python 脚本自动化数据清洗流程。</li>
-                    <li>协助团队将旧版系统迁移至 Docker 容器化环境。</li>
-                </ul>
-            </div>
-        </div>
-        
-        <h2>教育背景 / Education</h2>
-        <div class="section-content">
-            <div class="education-item">
-                <div class="job-title">计算机科学与技术硕士 <span class="date">2017.09 – 2020.06</span></div>
-                <p><strong>清华大学 (Tsinghua University)</strong> | 绩点：3.8/4.0</p>
-            </div>
-            <div class="education-item">
-                <div class="job-title">电子信息工程学士 <span class="date">2013.09 – 2017.06</span></div>
-                <p><strong>XX 大学 (XX University)</strong></p>
-            </div>
-        </div>
-        
-        <h2>核心技能 / Skills</h2>
-        <div class="section-content">
-            <ul class="skill-list">
-                <li>Java / Spring Boot</li>
-                <li>Python / Django</li>
-                <li>微服务 / Docker / Kubernetes</li>
-                <li>MySQL / Redis / Kafka</li>
-                <li>架构设计 / 高并发</li>
-            </ul>
-        </div>
+        <h1>ZenithChunyang的文字记录与思考</h1>
 
-    </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">关于新年的计划</span>
+                <span class="entry-date">2025 年 12 月 11 日</span>
+            </div>
+            <div class="entry-content">
+                <p>今天搭建了我的个人网站，决定用它来记录一些生活中的想法和学习心得。</p>
+                <p>发现直接在 GitHub 上编辑 HTML 文件比想象中要简单得多。这种“所见即所得”的静态托管方式非常适合个人记录，不需要配置复杂的后端。如果内容变多，我会考虑切换到 Jekyll 或 Hugo 提高效率。</p>
+            </div>
+        </div>
+        
+        </div>
 </body>
 </html>
