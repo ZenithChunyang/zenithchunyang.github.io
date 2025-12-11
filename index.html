@@ -63,6 +63,67 @@
         .entry-content p {
             margin-top: 5px;
         }
+
+        /* 默认模式：白天模式 (Light Mode) */
+        body {
+            background-color: #f7f9fc; /* 浅色背景 */
+            color: #333; /* 深色文字 */
+        }
+        
+        .container {
+            background: #ffffff; /* 容器内白色背景 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+        }
+        
+        h1 {
+            color: #2c3e50; /* 标题颜色 */
+            border-bottom: 3px solid #3498db; /* 蓝色下划线 */
+        }
+        
+        .entry-title {
+            color: #2980b9; /* 记录标题颜色 */
+        }
+        
+        /* ... 其他现有样式保持不变 ... */
+
+        /* ------------------------------------------------ */
+        /* 黑暗模式适配：使用 prefers-color-scheme 媒体查询 */
+        /* ------------------------------------------------ */
+        @media (prefers-color-scheme: dark) {
+            
+            /* 覆盖 body 样式 */
+            body {
+                background-color: #1a1a1a; /* 极深背景色 */
+                color: #e0e0e0; /* 浅色文字 */
+            }
+        
+            /* 覆盖 container 样式 */
+            .container {
+                background: #2c2c2c; /* 容器深色背景 */
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+            }
+        
+            /* 覆盖标题样式 */
+            h1 {
+                color: #ffffff; /* 标题改为白色 */
+                border-bottom: 3px solid #3498db; /* 保持蓝色下划线 */
+            }
+        
+            /* 覆盖记录分隔线 */
+            .entry {
+                border-bottom: 1px dashed #444444; 
+            }
+        
+            /* 覆盖记录标题样式 */
+            .entry-title {
+                color: #92c0f0; /* 记录标题改为更亮的蓝色 */
+            }
+        
+            /* 覆盖日期文字 */
+            .entry-date {
+                color: #b0b0b0; 
+            }
+        }
     </style>
 </head>
 <body>
